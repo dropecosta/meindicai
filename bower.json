@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "meindicai",
   "description": "Site Meindicai",
   "main": "",
@@ -11,6 +12,25 @@
   "license": "MIT",
   "homepage": "",
   "private": true,
+=======
+  "name": "Meindicai",
+  "authors": [
+    "Pedro Costa <dropecosta@gmail.com>"
+  ],
+  "description": "Site de emprego meindicai.com.br",
+  "main": "index.html",
+  "keywords": [
+    "meindicai",
+    "vaga",
+    "emprego"
+  ],
+  "license": "MIT",
+  "homepage": "meindicai.com.br",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  },
+>>>>>>> 0db0b53... inclusão do bower
   "ignore": [
     "**/.*",
     "node_modules",
@@ -18,7 +38,15 @@
     "test",
     "tests"
   ],
+<<<<<<< HEAD
   "dependencies": {
                 "jquery": "~2.0.3"
         }
+=======
+  "devDependencies": {
+    "font-awesome": "^4.6.3",
+    "bootstrap-sass": "^3.3.7",
+    "breakpoint-sass": "^2.7.0"
+  }
+>>>>>>> 0db0b53... inclusão do bower
 }
