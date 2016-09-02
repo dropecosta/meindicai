@@ -1,17 +1,29 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "name": "meindicai",
   "description": "Site Meindicai",
   "main": "",
   "keywords": [
     "meindicai"
   ],
+=======
+  "name": "Meindicai",
+>>>>>>> 9413efe94e0f1e5e6abf5e9665cf25146cba9cac
   "authors": [
-    "Pedro Antonio Costa Reis"
+    "Pedro Costa <dropecosta@gmail.com>"
+  ],
+  "description": "Site de emprego meindicai.com.br",
+  "main": "index.html",
+  "keywords": [
+    "meindicai",
+    "vaga",
+    "emprego"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "meindicai.com.br",
   "private": true,
+<<<<<<< HEAD
 =======
   "name": "Meindicai",
   "authors": [
@@ -31,6 +43,11 @@
     "bootstrap": "^3.3.7"
   },
 >>>>>>> 0db0b53... inclusão do bower
+=======
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  },
+>>>>>>> 9413efe94e0f1e5e6abf5e9665cf25146cba9cac
   "ignore": [
     "**/.*",
     "node_modules",
@@ -39,10 +56,13 @@
     "tests"
   ],
 <<<<<<< HEAD
+<<<<<<< HEAD
   "dependencies": {
                 "jquery": "~2.0.3"
         }
 =======
+=======
+>>>>>>> 9413efe94e0f1e5e6abf5e9665cf25146cba9cac
   "devDependencies": {
     "font-awesome": "^4.6.3",
     "bootstrap-sass": "^3.3.7",
@@ -50,5 +70,8 @@
     "jquery": "^3.1.0",
     "bootstrap": "^3.3.7"
   }
+<<<<<<< HEAD
 >>>>>>> 0db0b53... inclusão do bower
+=======
+>>>>>>> 9413efe94e0f1e5e6abf5e9665cf25146cba9cac
 }
