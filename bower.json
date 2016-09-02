@@ -1,53 +1,16 @@
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
   "name": "meindicai",
   "description": "Site Meindicai",
   "main": "",
   "keywords": [
     "meindicai"
   ],
-=======
-  "name": "Meindicai",
->>>>>>> 9413efe94e0f1e5e6abf5e9665cf25146cba9cac
   "authors": [
-    "Pedro Costa <dropecosta@gmail.com>"
-  ],
-  "description": "Site de emprego meindicai.com.br",
-  "main": "index.html",
-  "keywords": [
-    "meindicai",
-    "vaga",
-    "emprego"
+    "Pedro Antonio Costa Reis"
   ],
   "license": "MIT",
-  "homepage": "meindicai.com.br",
+  "homepage": "https://github.com/dropecosta/meindicai",
   "private": true,
-<<<<<<< HEAD
-=======
-  "name": "Meindicai",
-  "authors": [
-    "Pedro Costa <dropecosta@gmail.com>"
-  ],
-  "description": "Site de emprego meindicai.com.br",
-  "main": "index.html",
-  "keywords": [
-    "meindicai",
-    "vaga",
-    "emprego"
-  ],
-  "license": "MIT",
-  "homepage": "meindicai.com.br",
-  "private": true,
-  "dependencies": {
-    "bootstrap": "^3.3.7"
-  },
->>>>>>> 0db0b53... inclusão do bower
-=======
-  "dependencies": {
-    "bootstrap": "^3.3.7"
-  },
->>>>>>> 9413efe94e0f1e5e6abf5e9665cf25146cba9cac
   "ignore": [
     "**/.*",
     "node_modules",
@@ -55,23 +18,11 @@
     "test",
     "tests"
   ],
-<<<<<<< HEAD
-<<<<<<< HEAD
   "dependencies": {
-                "jquery": "~2.0.3"
-        }
-=======
-=======
->>>>>>> 9413efe94e0f1e5e6abf5e9665cf25146cba9cac
-  "devDependencies": {
     "font-awesome": "^4.6.3",
+    "jquery": "1.9.1 - 3",
+    "bootstrap": "^3.3.7",
     "bootstrap-sass": "^3.3.7",
-    "breakpoint-sass": "^2.7.0",
-    "jquery": "^3.1.0",
-    "bootstrap": "^3.3.7"
+    "breakpoint-sass": "^2.7.0"
   }
-<<<<<<< HEAD
->>>>>>> 0db0b53... inclusão do bower
-=======
->>>>>>> 9413efe94e0f1e5e6abf5e9665cf25146cba9cac
 }
