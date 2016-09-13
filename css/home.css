@@ -1,0 +1,129 @@
+/* ======== Cores */
+/* ======== Font */
+/* ======== Outros */
+/* ======== Background Color Opacity */
+/* ======== Columns */
+main .banner {
+  min-height: 600px;
+  width: 100%;
+  background-image: url("../images/img-banner.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #000;
+  background-size: cover; }
+  main .banner:before, main .banner:after {
+    content: " ";
+    display: table; }
+  main .banner:after {
+    clear: both; }
+  main .banner h1, main .banner label, main .banner p {
+    color: white; }
+  main .banner h1 {
+    font-weight: 700;
+    font-size: 46px;
+    margin: 140px 0 50px 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); }
+  main .banner form.busca-home:before, main .banner form.busca-home:after {
+    content: " ";
+    display: table; }
+  main .banner form.busca-home:after {
+    clear: both; }
+  main .banner form.busca-home .item {
+    float: left;
+    display: inline;
+    margin-right: 20px; }
+    main .banner form.busca-home .item label {
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+      font-weight: 400; }
+      @media (max-width: 640px) {
+        main .banner form.busca-home .item label:before, main .banner form.busca-home .item label:after {
+          content: " ";
+          display: table; }
+        main .banner form.busca-home .item label:after {
+          clear: both; } }
+    main .banner form.busca-home .item input {
+      display: block;
+      padding: 20px 15px;
+      width: 410px;
+      border: 1px solid #CCC; }
+      @media (max-width: 1024px) {
+        main .banner form.busca-home .item input {
+          width: 250px; } }
+      @media (max-width: 640px) {
+        main .banner form.busca-home .item input {
+          position: relative;
+          width: 168px;
+          clear: both; } }
+  main .banner form.busca-home .bt-busca-home {
+    -moz-transition: all 0s linear;
+    -o-transition: all 0s linear;
+    -webkit-transition: all 0s linear;
+    transition: all 0s linear;
+    padding: 24px;
+    background-color: #58ba2b;
+    color: white;
+    margin-top: 22px; }
+  main .banner form.busca-home .bt-busca-home:hover {
+    background-color: #449121; }
+  main .banner p {
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); }
+    main .banner p span {
+      font-weight: 700;
+      font-size: 36px; }
+
+main .call-for-action {
+  background: #58ba2b;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  height: 70px;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center; }
+  main .call-for-action p {
+    margin-right: 20px; }
+  main .call-for-action .btn {
+    color: #58ba2b;
+    background-color: white;
+    border-color: #aaaaaa; }
+    main .call-for-action .btn:focus, main .call-for-action .btn.focus {
+      color: #58ba2b;
+      background-color: #e6e6e6;
+      border-color: #6a6a6a; }
+    main .call-for-action .btn:hover {
+      color: #58ba2b;
+      background-color: #e6e6e6;
+      border-color: #8b8b8b; }
+    main .call-for-action .btn:active, main .call-for-action .btn.active,
+    .open > main .call-for-action .btn.dropdown-toggle {
+      color: #58ba2b;
+      background-color: #e6e6e6;
+      border-color: #8b8b8b; }
+      main .call-for-action .btn:active:hover, main .call-for-action .btn:active:focus, main .call-for-action .btn:active.focus, main .call-for-action .btn.active:hover, main .call-for-action .btn.active:focus, main .call-for-action .btn.active.focus,
+      .open > main .call-for-action .btn.dropdown-toggle:hover,
+      .open > main .call-for-action .btn.dropdown-toggle:focus,
+      .open > main .call-for-action .btn.dropdown-toggle.focus {
+        color: #58ba2b;
+        background-color: #d4d4d4;
+        border-color: #6a6a6a; }
+    main .call-for-action .btn:active, main .call-for-action .btn.active,
+    .open > main .call-for-action .btn.dropdown-toggle {
+      background-image: none; }
+    main .call-for-action .btn.disabled:hover, main .call-for-action .btn.disabled:focus, main .call-for-action .btn.disabled.focus, main .call-for-action .btn[disabled]:hover, main .call-for-action .btn[disabled]:focus, main .call-for-action .btn[disabled].focus,
+    fieldset[disabled] main .call-for-action .btn:hover,
+    fieldset[disabled] main .call-for-action .btn:focus,
+    fieldset[disabled] main .call-for-action .btn.focus {
+      background-color: white;
+      border-color: #aaaaaa; }
+    main .call-for-action .btn .badge {
+      color: white;
+      background-color: #58ba2b; }

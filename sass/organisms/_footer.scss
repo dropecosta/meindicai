@@ -1,0 +1,23 @@
+footer{
+
+	.nossas-redes{
+		a{
+			display: inline-block;
+			border: solid 1px $preto;
+			padding: 8px;
+			line-height: 8px;
+			width: 30px;
+    		height: 30px;
+    		margin: 0 5px 0 0;
+    		@include border-radius(120px);
+
+			i{
+			color: $preto;
+			width: 20px;
+			height: 20px;
+			}	
+		}
+		
+	}
+
+}

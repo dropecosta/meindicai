@@ -1,0 +1,111 @@
+main{
+
+	.banner{
+		@include clearfix;
+
+		min-height: 600px;
+		width:100%;
+		
+		background-image: url('../images/img-banner.png');
+		background-repeat: no-repeat;
+		background-position:top center;
+		background-color: #000;
+		background-size: cover;
+
+		h1, label, p{color:$branco;}
+
+		h1{
+			font-weight: $bold;
+			font-size: 46px;
+			margin: 140px 0 50px 0;
+
+			@include text-shadow;
+		}
+
+		form.busca-home{
+			@include clearfix;
+
+			.item{
+				float:left;
+				display: inline;
+				margin-right: 20px;
+
+				label {
+					@include text-shadow;
+					font-weight: $regular;
+
+					@include breakpoint($celular){
+						@include clearfix;
+						
+					}
+
+				}
+
+				input{
+					display: block;
+					padding: 20px 15px;
+					width: 410px;
+					border: 1px solid #CCC;
+
+					@include breakpoint($tablet){
+						width: 250px;
+					}
+
+					@include breakpoint($celular){
+						position: relative;
+						width: 168px;;
+						clear: both;
+					}
+
+				}
+
+			}
+
+			.bt-busca-home{
+				@include transition(0s)
+				padding: 24px;
+				background-color: $verde;
+				color: $branco;
+				margin-top:22px;
+
+			}
+
+			.bt-busca-home:hover{
+				background-color: darken($verde, 10%);
+			}
+
+		}
+
+
+		p{
+			margin-top: 20px;
+			@include text-shadow;
+			
+			span{
+				font-weight: $bold;
+				font-size: 36px;
+			}
+		}
+	}
+
+	.call-for-action{
+		background: $verde;
+		color: $branco;
+		font-size: 20px;
+		font-weight: $light;
+		height: 70px;
+		padding-top:20px;
+		
+		@include flexbox;
+		@include justify-content(center);
+
+		p{
+			margin-right: 20px;
+		}
+
+		.btn{
+        	@include button-variant($verde, $branco, $cinza);
+    	}
+
+	}
+}

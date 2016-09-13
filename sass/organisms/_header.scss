@@ -1,0 +1,77 @@
+header{
+	width: 100%;
+	height: 70px;
+
+	@include clearfix;
+
+	.logo{
+		float: left;
+		margin-top: 10px;
+
+		a{
+			img{
+				width: 135px;
+				height: 40px;
+
+			}
+		}
+	}
+
+	nav{
+		float: left;
+		margin: 15px 0 0 70px;
+
+		@include breakpoint($tablet){
+			display: none;
+		}
+
+
+		ul{
+			li{
+				display: inline-block;
+
+				a{
+					@include transition(.3s)
+					  &:hover,
+					  &:focus{
+					    text-decoration: none !important;
+					    color: $branco;
+					    background-color: $verde;
+					 }
+					text-transform: uppercase;
+					color: $preto;
+					font-weight: $regular;
+					display: inline-block;
+					padding: 10px 20px;
+					text-decoration: none;
+					box-sizing: border-box;
+					margin: 0;
+				}
+
+			}
+		}
+	}
+
+	ul.user{
+		float:right;
+		margin: 25px 0 0 0;
+
+		li{
+			display: inline-block;
+			margin: 0 20px 0 0;
+
+			a{
+				text-transform: uppercase;
+				color: $preto;
+
+				span.icon-user{
+					padding:6px 10px;
+				}
+
+			}
+		}
+	}
+}
+
+
+	
