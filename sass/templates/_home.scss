@@ -1,4 +1,4 @@
-main{
+.main{
 
 	.banner{
 		@include clearfix;
@@ -24,6 +24,12 @@ main{
 
 		form.busca-home{
 			@include clearfix;
+
+			@include breakpoint($celular){
+				@include flexbox;
+				@include flex-direction(column);
+
+			}
 
 			.item{
 				float:left;
@@ -53,7 +59,7 @@ main{
 
 					@include breakpoint($celular){
 						position: relative;
-						width: 168px;;
+						
 						clear: both;
 					}
 
@@ -63,10 +69,13 @@ main{
 
 			.bt-busca-home{
 				@include transition(0s)
-				padding: 24px;
+
+				padding: 25px 35px 35px 25px;
 				background-color: $verde;
 				color: $branco;
-				margin-top:22px;
+				margin-top:25px;
+				width: 40px;
+				height: 40px;
 
 			}
 
@@ -108,4 +117,197 @@ main{
     	}
 
 	}
+
+	.main-content{
+		@include flexbox;
+		@include flex-flow(flex-wrap);
+
+		@include breakpoint($celular){
+			@include flex-direction(column);
+		}
+
+		section.col-left{
+			width: 70%;
+
+			@include breakpoint($celular){
+				width: 100%;
+			}
+
+			h3{
+				margin: 60px 0 40px 0;
+				font-size: 16px;
+				text-transform: uppercase;
+			}
+
+			ul{
+				li{
+					border-top: 1px solid #CCC;
+					padding: 20px 0;
+					height:100px;
+
+					img{}
+
+					p.vaga-titulo{
+						font-size: 16px;
+						font-weight: $bold;
+
+						a{
+							color: $preto;
+							text-dexoration: none;
+							@include transition(.1s)
+							  &:hover,
+							  &:focus{
+							    color: $verde;
+							 }
+					 	}
+
+					}
+
+					p.vaga-empresa{
+						color: $cinza;
+						font-weight: $light;
+						float: left;
+						margin-right:20px;
+
+						span{
+							padding-right: 10px;
+						}
+					}
+
+					p.vaga-cidade{
+						color: $cinza;
+						font-weight: $light;
+						float: left;
+						display: inline;
+
+						span{
+							padding-right: 10px;
+						}
+					}
+
+				}
+
+			}
+
+			.btn{
+        		@include button-variant($branco, $verde, $branco);
+    		}
+
+		}
+
+		section.col-right{
+			width: 30%;
+			padding-left: 40px;
+
+			@include breakpoint($celular){
+				width: 100%;
+				padding-left: 0px;
+			}
+				
+			h3{
+				margin: 60px 0 40px 0;
+				font-size: 16px;
+				text-transform: uppercase;
+			}
+
+			.destaque-square{
+				border: 1px solid #CCC;
+				background: #fbfbfb;
+				padding: 30px;
+
+				.destaque-titulo{
+					font-size: 16px;
+					font-weight: $bold;
+
+					a{
+						color: $preto;
+						text-dexoration: none;
+						@include transition(.1s)
+							&:hover,
+							&:focus{
+								color: $verde;
+							}
+					 	}
+
+					}
+
+				.destaque-empresa{
+					color: $cinza;
+					font-weight: $light;
+					float: left;
+					margin-right:20px;
+
+					span{
+						padding-right: 10px;
+					}
+				}
+
+				.destaque-cidade{
+					color: $cinza;
+					font-weight: $light;
+					float: left;
+					display: inline;
+
+					span{
+						padding-right: 10px;
+					}
+						
+				}
+
+				.destaque-descricao{
+					float:left;
+					display: block;
+					margin: 20px 0;
+					line-height: 22px;
+				}
+
+				.btn{
+        			@include button-variant($branco, $verde, $branco);
+        			margin-top:20px;
+    			}
+
+			}
+
+		}
+
+	}
+
+	section.parceiros{
+
+		itens.parceiros{
+
+			.parceiro{
+
+
+			}
+
+		}
+
+	}
+
+	section.informacoes-uteis{
+
+		h3{
+
+		}
+
+		.itens-info{
+
+			p.info-titulo{
+
+			}
+
+			p.info-data{
+
+			}
+
+			p.info-descricao{
+
+			}
+
+		}
+
+	}
+
+
 }
