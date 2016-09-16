@@ -1,23 +1,146 @@
 footer{
+	background: $preto;
+	margin-top:100px;
+	color: $cinza;
+	height: 570px;
 
-	.nossas-redes{
-		a{
-			display: inline-block;
-			border: solid 1px $preto;
-			padding: 8px;
-			line-height: 8px;
-			width: 30px;
-    		height: 30px;
-    		margin: 0 5px 0 0;
-    		@include border-radius(120px);
+	.sobre{
+		width: 415px;
 
-			i{
-			color: $preto;
-			width: 20px;
-			height: 20px;
-			}	
+
+		p.sobre-titulo{
+			margin: 80px 0 40px 0;
+			font-size: 18px;
+			font-weight: $bold;
 		}
-		
+
+		p.sobre-descricao{
+			line-height: 22px;	
+		}
+
+		.btn{
+        	@include button-variant($branco, $verde, $verde);
+        	margin-top:20px;
+    	}
+
 	}
 
+	nav{
+		@include flexbox;
+		@include justify-content(space-between);
+		width: 590px;
+		float: right;
+		margin-top: -215px;
+
+		@include breakpoint($celular){
+			display: none;
+		}
+
+		@include breakpoint($tablet){
+			display: none;
+		}
+
+		.menu-footer{	
+			.menu-footer-titulo{
+					font-size: 16px;
+					font-weight: $bold;
+			}
+
+			ul{
+				list-style: square;
+				margin-left: 20px;
+
+				li{
+					position:relative;
+					list-style-type: none;
+					text-transform: uppercase;
+					line-height: 1.85em;
+
+					a{
+						color: $cinza;
+						text-dexoration: none;
+						@include transition(.1s)
+							&:hover,
+							&:focus{
+								color: $verde;
+						}
+					 }
+
+				}
+
+				li::before{
+					position:absolute;
+					content:"";
+					top:50%;
+					-webkit-transform:translateY(-50%);
+					-moz-transform:translateY(-50%);
+					-o-transform:translateY(-50%);
+					-ms-transform:translateY(-50%);
+					transform:translateY(-50%);
+					margin-left:-15px;
+					width: 0; 
+					height: 0; 
+					border-top: 5px solid transparent;
+					border-bottom: 5px solid transparent;
+					border-left: 5px solid $cinza;
+				}
+
+
+			}
+
+				
+		}
+
+	}
+
+	.linha-footer{
+		width: 100%;
+		border:1px solid #444;
+		margin:50px auto 0 auto;
+
+	}
+
+	.nossas-redes{
+		width: 100%;
+		text-align: center;
+
+		h3{
+			margin: 40px 0 30px 0;
+			font-size: 18px;
+			font-weight: $bold;
+		}
+
+		p.nossas-redes-titulo{
+
+		}
+
+		a{
+			display: inline-block;
+			border: solid 1px $branco;
+			padding: 8px;
+			line-height: 8px;
+			width: 35px;
+    		height: 35px;
+    		margin: 0 5px 0 0;
+    		@include border-radius(120px);
+    		@include transition(0s)
+
+			i{
+			color: $branco;
+			width: 20px;
+			height: 20px;
+			}
+
+
+		}
+
+	.assinatura{
+		margin-top: 20px;
+	}
+
+	}
+
+
 }
+
+	
