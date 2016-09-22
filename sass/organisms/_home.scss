@@ -287,6 +287,7 @@
 
 	section.parceiros{
 
+
 		h3{
 			margin: 80px 0 40px 0;
 			font-size: 16px;
@@ -303,24 +304,24 @@
 			}
 
 			@include breakpoint($tablet){
-				@include flex-direction(column);
-				@include align-items(center);
+				@include flex-wrap(wrap);
+				
 			}
+
 
 
 			.parceiro{
 				padding: 50px 80px;
 				border: solid #CCC 1px;
-
 			}
+			
+	    }
 
-		}
+	    .btn{
+	        		@include button-variant($branco, $verde, $branco);
+	        		margin-top:20px;
 
-		.btn{
-        		@include button-variant($branco, $verde, $branco);
-        		margin-top:20px;
-
-    	}
+	    	}
 
 	}
 
@@ -342,13 +343,12 @@
 			}
 
 			@include breakpoint($tablet){
-				@include flex-direction(column);
-				@include align-items(center);
+				@include flex-wrap(wrap);
 			}
 
 			
 			.info-box{
-				width: 320px;
+				width: 300px;
 
 				@include breakpoint($celular){
 					margin-bottom: 50px;

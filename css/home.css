@@ -365,17 +365,10 @@
       align-items: center; } }
   @media (max-width: 1024px) {
     .main section.parceiros .itens-parceiros {
-      -webkit-box-direction: normal;
-      -webkit-box-orient: vertical;
-      -webkit-flex-direction: column;
-      -moz-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      -moz-align-items: center;
-      align-items: center; } }
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
   .main section.parceiros .itens-parceiros .parceiro {
     padding: 50px 80px;
     border: solid #CCC 1px; }
@@ -449,19 +442,12 @@
       align-items: center; } }
   @media (max-width: 1024px) {
     .main section.informacoes-uteis .itens-info {
-      -webkit-box-direction: normal;
-      -webkit-box-orient: vertical;
-      -webkit-flex-direction: column;
-      -moz-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      -moz-align-items: center;
-      align-items: center; } }
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
   .main section.informacoes-uteis .itens-info .info-box {
-    width: 320px; }
+    width: 300px; }
     @media (max-width: 640px) {
       .main section.informacoes-uteis .itens-info .info-box {
         margin-bottom: 50px; } }
