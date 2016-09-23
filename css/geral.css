@@ -156,7 +156,8 @@ header {
     margin-left: -220px; }
   .animenu li, .animenu a {
     display: inline-block;
-    font-size: 15px; }
+    font-size: 15px;
+    width: 100%; }
   .animenu a {
     color: white;
     text-decoration: none; }
@@ -172,19 +173,10 @@ header {
     .animenu__nav > li > a {
       padding: 20px 60px;
       text-transform: uppercase; }
-      .animenu__nav > li > a:first-child:nth-last-child(2):before {
-        content: "";
-        position: absolute;
-        border: 4px solid transparent;
-        border-bottom: 0;
-        border-top-color: currentColor;
-        top: 50%;
-        margin-top: -2px;
-        right: 10px; }
     .animenu__nav > li:hover > ul {
       opacity: 1;
       visibility: visible;
-      margin: 0; }
+      width: 100%; }
     .animenu__nav > li:hover > a {
       color: #fff; }
 
@@ -202,23 +194,15 @@ header {
       border-bottom: 1px solid #a0e282; }
       .animenu__nav > li:last-child {
         border: 0; }
-      .animenu__nav > li:first-child > a:after {
-        content: '';
-        position: absolute;
-        height: 0;
-        width: 0;
-        left: 1em;
-        top: -6px;
-        border: 6px solid transparent;
-        border-top: 0;
-        border-bottom-color: inherit; }
       .animenu__nav > li > a {
         border-color: #58ba2b;
         position: relative; }
     .animenu__nav a:hover {
       background-color: #44a617;
       border-color: #44a617;
-      color: #fff; } }
+      color: #fff;
+      width: 100%;
+      padding: 20px 60px; } }
 
 .animenu__nav--open {
   display: block !important; }
