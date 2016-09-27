@@ -345,3 +345,8 @@ footer {
         height: 20px; }
     footer .nossas-redes .assinatura {
       margin-top: 20px; }
+
+footer.adesao {
+  margin-top: 0;
+  background: #333333;
+  height: 570px; }

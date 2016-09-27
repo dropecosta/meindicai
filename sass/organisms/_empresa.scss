@@ -1,0 +1,187 @@
+.main{
+
+	.feature{
+		@include clearfix;
+
+		height: 300px;
+		width:100%;
+		background-color: $verde; 
+
+
+		h1, label, p{color:$branco;}
+
+		h1{
+			font-weight: $bold;
+			font-size: 46px;
+			margin: 140px 0 20px 0;
+
+			@include text-shadow;
+		}
+
+		p{
+			margin-top: 20px;
+			@include text-shadow;
+			
+			span{
+				font-weight: $bold;
+				font-size: 36px;
+			}
+
+		}
+
+	}
+
+
+	section.opcoes-empresa{	
+		@include flexbox;
+		@include flex-direction(row);
+		@include justify-content(space-between);
+
+		margin-top: 100px;
+		width:100%;
+
+		@include breakpoint($celular){
+			@include flex-direction(column);
+			@include align-items(center);
+		}
+
+		@include breakpoint($tablet){
+			@include flex-wrap(wrap);
+		}
+
+			
+		.box-empresa{
+			width: 300px;
+			margin: 0 10px;
+			line-height: 22px;
+
+			@include breakpoint($celular){
+				margin-bottom: 50px;
+			}
+
+			@include breakpoint($tablet){
+				margin-bottom: 40px;
+			}
+
+			p.box-empresa-titulo{
+				margin-bottom: 20px;
+				padding: 20px 10px;
+				font-size: 16px;
+				font-weight: $bold;
+				border: 1px solid $cinza;
+				color: $cinza - 50%;
+				text-transform: uppercase;
+				width: 100%;
+
+			}
+
+			a{
+				text-decoration:none;
+				color: $preto;
+			}
+
+		}
+
+	}
+
+
+
+	section.informacoes-uteis{
+
+		h3{
+			margin: 80px 0 40px 0;
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+
+		.itens-info{
+			@include flexbox;
+			@include justify-content(space-between);
+
+			@include breakpoint($celular){
+				@include flex-direction(column);
+				@include align-items(center);
+			}
+
+			@include breakpoint($tablet){
+				@include flex-wrap(wrap);
+			}
+
+			
+			.info-box{
+				width: 300px;
+
+				@include breakpoint($celular){
+					margin-bottom: 50px;
+				}
+
+				@include breakpoint($tablet){
+					margin-bottom: 40px;
+				}
+
+				p.info-titulo{
+					margin:10px 0 10px 0;
+					font-size: 16px;
+					font-weight: $bold;
+
+					a{
+					color: $preto;
+					text-dexoration: none;
+						@include transition(.1s)
+							&:hover,
+							&:focus{
+								color: $verde;
+						}
+
+					}
+
+				}
+
+				.info-stats{
+					@include flexbox;
+
+					p.info-data{
+					float: left;
+					color: $cinza;
+					font-weight: $light;
+					margin-right: 20px;
+
+						span{
+							padding-right: 10px;
+						}
+						
+					}
+
+					p.info-comments{
+
+						float: left;
+						display: inline;
+						color: $cinza;
+						font-weight: $light;
+
+						span{
+							padding-right: 10px;
+						}
+						
+					}
+
+				}
+
+				
+				p.info-descricao{
+					@include clearfix;
+					line-height: 22px;
+				}
+
+				.btn{
+        		@include button-variant($branco, $verde, $branco);
+        			margin-top:20px;
+    			}
+
+			}
+
+		}
+
+	}
+
+}

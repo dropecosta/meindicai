@@ -1,0 +1,72 @@
+.adesao{
+	width: 100%;
+	height: 500px;
+	background: #CCC;
+}
+
+h1{
+	font-weight: $bold;
+	font-size: 36px;
+	text-align: center;
+	color: $cinza;
+	padding-top: 120px;
+}
+p.adesao-descricao{
+	color: $preto;
+	text-align:center;
+	font-size:16px;
+}
+
+
+form.adesao{
+
+			@include breakpoint($celular){
+				@include flexbox;
+				@include flex-direction(column);
+
+			}
+
+			.item{
+				@include flexbox;
+				@include flex-direction(row);
+				@include justify-content(center); 
+
+
+				input{
+					display: block;
+					padding: 20px 15px;
+					width: 410px;
+					margin:40px 10px 0 0;
+					border: 1px solid #CCC;
+
+					@include breakpoint($tablet){
+						width: 250px;
+					}
+
+					@include breakpoint($celular){
+						position: relative;
+						
+						clear: both;
+					}
+
+				}
+
+			}
+
+			.bt-busca-home{
+				@include transition(0s)
+
+				padding: 25px 35px 35px 25px;
+				background-color: $verde;
+				color: $branco;
+				width: 40px;
+				height: 40px;
+				margin-top: 40px;
+
+			}
+
+			.bt-busca-home:hover{
+				background-color: darken($verde, 10%);
+			}
+
+}

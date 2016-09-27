@@ -1,0 +1,209 @@
+/* ======== Cores */
+/* ======== Font */
+/* ======== Outros */
+/* ======== Background Color Opacity */
+/* ======== Columns */
+.main .feature {
+  height: 300px;
+  width: 100%;
+  background-color: #58ba2b; }
+  .main .feature:before, .main .feature:after {
+    content: " ";
+    display: table; }
+  .main .feature:after {
+    clear: both; }
+  .main .feature h1, .main .feature label, .main .feature p {
+    color: white; }
+  .main .feature h1 {
+    font-weight: 700;
+    font-size: 46px;
+    margin: 140px 0 20px 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); }
+  .main .feature p {
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); }
+    .main .feature p span {
+      font-weight: 700;
+      font-size: 36px; }
+
+.main section.opcoes-empresa {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+  margin-top: 100px;
+  width: 100%; }
+  @media (max-width: 640px) {
+    .main section.opcoes-empresa {
+      -webkit-box-direction: normal;
+      -webkit-box-orient: vertical;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center; } }
+  @media (max-width: 1024px) {
+    .main section.opcoes-empresa {
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
+  .main section.opcoes-empresa .box-empresa {
+    width: 300px;
+    margin: 0 10px;
+    line-height: 22px; }
+    @media (max-width: 640px) {
+      .main section.opcoes-empresa .box-empresa {
+        margin-bottom: 50px; } }
+    @media (max-width: 1024px) {
+      .main section.opcoes-empresa .box-empresa {
+        margin-bottom: 40px; } }
+    .main section.opcoes-empresa .box-empresa p.box-empresa-titulo {
+      margin-bottom: 20px;
+      padding: 20px 10px;
+      font-size: 16px;
+      font-weight: 700;
+      border: 1px solid #aaaaaa;
+      color: #787878;
+      text-transform: uppercase;
+      width: 100%; }
+    .main section.opcoes-empresa .box-empresa a {
+      text-decoration: none;
+      color: #333333; }
+
+.main section.informacoes-uteis h3 {
+  margin: 80px 0 40px 0;
+  font-size: 16px;
+  text-transform: uppercase; }
+
+.main section.informacoes-uteis .itens-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between; }
+  @media (max-width: 640px) {
+    .main section.informacoes-uteis .itens-info {
+      -webkit-box-direction: normal;
+      -webkit-box-orient: vertical;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center; } }
+  @media (max-width: 1024px) {
+    .main section.informacoes-uteis .itens-info {
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
+  .main section.informacoes-uteis .itens-info .info-box {
+    width: 300px; }
+    @media (max-width: 640px) {
+      .main section.informacoes-uteis .itens-info .info-box {
+        margin-bottom: 50px; } }
+    @media (max-width: 1024px) {
+      .main section.informacoes-uteis .itens-info .info-box {
+        margin-bottom: 40px; } }
+    .main section.informacoes-uteis .itens-info .info-box p.info-titulo {
+      margin: 10px 0 10px 0;
+      font-size: 16px;
+      font-weight: 700; }
+      .main section.informacoes-uteis .itens-info .info-box p.info-titulo a {
+        color: #333333;
+        text-dexoration: none;
+        -moz-transition: all 0.1s linear;
+        -o-transition: all 0.1s linear;
+        -webkit-transition: all 0.1s linear;
+        transition: all 0.1s linear; }
+        .main section.informacoes-uteis .itens-info .info-box p.info-titulo a:hover, .main section.informacoes-uteis .itens-info .info-box p.info-titulo a:focus {
+          color: #58ba2b; }
+    .main section.informacoes-uteis .itens-info .info-box .info-stats {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .main section.informacoes-uteis .itens-info .info-box .info-stats p.info-data {
+        float: left;
+        color: #aaaaaa;
+        font-weight: 300;
+        margin-right: 20px; }
+        .main section.informacoes-uteis .itens-info .info-box .info-stats p.info-data span {
+          padding-right: 10px; }
+      .main section.informacoes-uteis .itens-info .info-box .info-stats p.info-comments {
+        float: left;
+        display: inline;
+        color: #aaaaaa;
+        font-weight: 300; }
+        .main section.informacoes-uteis .itens-info .info-box .info-stats p.info-comments span {
+          padding-right: 10px; }
+    .main section.informacoes-uteis .itens-info .info-box p.info-descricao {
+      line-height: 22px; }
+      .main section.informacoes-uteis .itens-info .info-box p.info-descricao:before, .main section.informacoes-uteis .itens-info .info-box p.info-descricao:after {
+        content: " ";
+        display: table; }
+      .main section.informacoes-uteis .itens-info .info-box p.info-descricao:after {
+        clear: both; }
+    .main section.informacoes-uteis .itens-info .info-box .btn {
+      color: white;
+      background-color: #58ba2b;
+      border-color: white;
+      margin-top: 20px; }
+      .main section.informacoes-uteis .itens-info .info-box .btn:focus, .main section.informacoes-uteis .itens-info .info-box .btn.focus {
+        color: white;
+        background-color: #449121;
+        border-color: #bfbfbf; }
+      .main section.informacoes-uteis .itens-info .info-box .btn:hover {
+        color: white;
+        background-color: #449121;
+        border-color: #e0e0e0; }
+      .main section.informacoes-uteis .itens-info .info-box .btn:active, .main section.informacoes-uteis .itens-info .info-box .btn.active,
+      .open > .main section.informacoes-uteis .itens-info .info-box .btn.dropdown-toggle {
+        color: white;
+        background-color: #449121;
+        border-color: #e0e0e0; }
+        .main section.informacoes-uteis .itens-info .info-box .btn:active:hover, .main section.informacoes-uteis .itens-info .info-box .btn:active:focus, .main section.informacoes-uteis .itens-info .info-box .btn:active.focus, .main section.informacoes-uteis .itens-info .info-box .btn.active:hover, .main section.informacoes-uteis .itens-info .info-box .btn.active:focus, .main section.informacoes-uteis .itens-info .info-box .btn.active.focus,
+        .open > .main section.informacoes-uteis .itens-info .info-box .btn.dropdown-toggle:hover,
+        .open > .main section.informacoes-uteis .itens-info .info-box .btn.dropdown-toggle:focus,
+        .open > .main section.informacoes-uteis .itens-info .info-box .btn.dropdown-toggle.focus {
+          color: white;
+          background-color: #37741b;
+          border-color: #bfbfbf; }
+      .main section.informacoes-uteis .itens-info .info-box .btn:active, .main section.informacoes-uteis .itens-info .info-box .btn.active,
+      .open > .main section.informacoes-uteis .itens-info .info-box .btn.dropdown-toggle {
+        background-image: none; }
+      .main section.informacoes-uteis .itens-info .info-box .btn.disabled:hover, .main section.informacoes-uteis .itens-info .info-box .btn.disabled:focus, .main section.informacoes-uteis .itens-info .info-box .btn.disabled.focus, .main section.informacoes-uteis .itens-info .info-box .btn[disabled]:hover, .main section.informacoes-uteis .itens-info .info-box .btn[disabled]:focus, .main section.informacoes-uteis .itens-info .info-box .btn[disabled].focus,
+      fieldset[disabled] .main section.informacoes-uteis .itens-info .info-box .btn:hover,
+      fieldset[disabled] .main section.informacoes-uteis .itens-info .info-box .btn:focus,
+      fieldset[disabled] .main section.informacoes-uteis .itens-info .info-box .btn.focus {
+        background-color: #58ba2b;
+        border-color: white; }
+      .main section.informacoes-uteis .itens-info .info-box .btn .badge {
+        color: #58ba2b;
+        background-color: white; }
